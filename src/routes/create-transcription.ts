@@ -43,6 +43,6 @@ export async function createTranscriptionRoute(app: FastifyInstance) {
       },
     })
 
-    return response.text
+    return { transcrpition: response.text }
   })
 }
